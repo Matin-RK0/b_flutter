@@ -10,7 +10,7 @@ class SongsTab extends StatefulWidget {
 class _SongsTabState extends State<SongsTab> {
   @override
   Widget build(BuildContext context) {
-    return Center(
+    return const Center(
       child: Text(
         'Songs',
         style: TextStyle(fontSize: 24),
@@ -20,6 +20,8 @@ class _SongsTabState extends State<SongsTab> {
 }
 
 class PlaylistsTab extends StatefulWidget {
+  const PlaylistsTab({super.key});
+
   @override
   State<PlaylistsTab> createState() => _PlaylistsTabState();
 }
@@ -27,7 +29,7 @@ class PlaylistsTab extends StatefulWidget {
 class _PlaylistsTabState extends State<PlaylistsTab> {
   @override
   Widget build(BuildContext context) {
-    return Center(
+    return const Center(
       child: Text(
         'Playlists',
         style: TextStyle(fontSize: 24),

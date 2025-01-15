@@ -82,8 +82,7 @@ class SongItem extends StatelessWidget {
   }
 
   String formatDuration(BuildContext context, MediaItem song) {
-    return '${artist!}' +
-        ' . ' +
+    return artist!; ' . ' +
         '${song.duration?.inMinutes.remainder(60).toString().padLeft(2, '0')}:${song.duration?.inSeconds.remainder(60).toString().padLeft(2, '0')}';
   }
 
@@ -102,7 +101,7 @@ class SongItem extends StatelessWidget {
         size: 500,
         quality: 100,
         artworkBorder: BorderRadius.circular(14.0),
-        nullArtworkWidget: Center(
+        nullArtworkWidget: const Center(
           child: Icon(Icons.music_note_rounded),
         ),
         errorBuilder: (p0, p1, p2) => const Icon(Icons.music_note_rounded),

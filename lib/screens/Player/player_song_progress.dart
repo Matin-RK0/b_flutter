@@ -38,13 +38,13 @@ class PlayerSongProgress extends StatelessWidget {
           thumbGlowRadius: 12,
           timeLabelLocation: TimeLabelLocation.below,
           timeLabelPadding: 4,
-          thumbColor: Color(0xffB7B7B7),
-          timeLabelTextStyle: TextStyle(
+          thumbColor: const Color(0xffB7B7B7),
+          timeLabelTextStyle: const TextStyle(
             color: Color(0xff878787),
           ),
-          progressBarColor: Color(0xffB7B7B7),
+          progressBarColor: const Color(0xffB7B7B7),
           bufferedBarColor: Colors.transparent,
-          baseBarColor: Color(0x30888888),
+          baseBarColor: const Color(0x30888888),
         );
       },
     );

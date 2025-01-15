@@ -64,7 +64,7 @@ class SongsList extends StatelessWidget {
             },
           ),
         ),
-        Center(
+        const Center(
           child: Text('Not ready'),
         ),
       ],

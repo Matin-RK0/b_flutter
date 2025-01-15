@@ -40,9 +40,9 @@ class _HomePageState extends State<HomePage> {
           // Scaffold widget for the app structure
           return Scaffold(
             appBar: AppBar(
-              title: Padding(
-                padding: const EdgeInsets.only(top: 12),
-                child: const Text("Blue Music"),
+              title: const Padding(
+                padding: EdgeInsets.only(top: 12),
+                child: Text("Blue Music"),
               ),
               actions: [
                 Padding(
@@ -62,9 +62,9 @@ class _HomePageState extends State<HomePage> {
                   padding: const EdgeInsets.only(top: 12),
                   child: PopupMenuButton(itemBuilder: (context){
                     return [
-                      PopupMenuItem(child: Text('1')),
-                      PopupMenuItem(child: Text('2')),
-                      PopupMenuItem(child: Text('3')),
+                      const PopupMenuItem(child: Text('1')),
+                      const PopupMenuItem(child: Text('2')),
+                      const PopupMenuItem(child: Text('3')),
                     ];
                   }),
                 ),
@@ -75,13 +75,13 @@ class _HomePageState extends State<HomePage> {
                   indicatorColor: Colors.blue,
                   indicatorSize: TabBarIndicatorSize.label,
                   indicatorPadding:
-                      EdgeInsets.symmetric(horizontal: 16.0, vertical: -2.0),
+                      const EdgeInsets.symmetric(horizontal: 16.0, vertical: -2.0),
                   labelColor: Colors.white,
                   unselectedLabelColor: Colors.white30,
                   tabAlignment: TabAlignment.start,
                   isScrollable: true,
                   tabs: [
-                    SongsTab(),
+                    const SongsTab(),
                     PlaylistsTab(),
                   ],
                 ),

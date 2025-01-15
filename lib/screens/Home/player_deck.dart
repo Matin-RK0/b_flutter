@@ -36,7 +36,7 @@ class PlayerDeck extends StatelessWidget {
   // Build the main card widget
   Widget _buildCard(BuildContext context, MediaItem playingSong) {
     return Card(
-      shape: RoundedRectangleBorder(
+      shape: const RoundedRectangleBorder(
         borderRadius: BorderRadius.only(
             topLeft: Radius.circular(14), topRight: Radius.circular(14)),
       ),
@@ -66,9 +66,9 @@ class PlayerDeck extends StatelessWidget {
         quality: 100,
         artworkHeight: 45,
         artworkWidth: 45,
-        artworkBorder: BorderRadius.only(
+        artworkBorder: const BorderRadius.only(
             topLeft: Radius.circular(14), topRight: Radius.circular(14)),
-        nullArtworkWidget: SizedBox(),
+        nullArtworkWidget: const SizedBox(),
       ),
     );
   }
@@ -78,7 +78,7 @@ class PlayerDeck extends StatelessWidget {
     return Positioned.fill(
       child: Container(
         decoration: BoxDecoration(
-          borderRadius: BorderRadius.only(
+          borderRadius: const BorderRadius.only(
               topLeft: Radius.circular(14), topRight: Radius.circular(14)),
           color: Colors.black.withOpacity(0.5),
         ),
@@ -129,7 +129,7 @@ class PlayerDeck extends StatelessWidget {
                   size: 500,
                   quality: 100,
                   artworkBorder: BorderRadius.circular(14.0),
-                  nullArtworkWidget: Icon(Icons.music_note_rounded),
+                  nullArtworkWidget: const Icon(Icons.music_note_rounded),
                   errorBuilder: (p0, p1, p2) =>
                       const Icon(Icons.music_note_rounded),
                 ),

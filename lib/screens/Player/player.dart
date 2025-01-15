@@ -45,7 +45,7 @@ class Player extends StatelessWidget {
                   Container(
                     height: 34,
                     width: 34,
-                    decoration: BoxDecoration(
+                    decoration: const BoxDecoration(
                       shape: BoxShape.circle,
                       color: Color(0x10FFFFFF),
                     ),
@@ -61,18 +61,18 @@ class Player extends StatelessWidget {
                       },
                       highlightColor: Colors.transparent, // رنگ Highlight
                       radius: 6,
-                      child: Icon(
+                      child: const Icon(
                         Icons.arrow_back,
                         color: Color(0xffDDDDDD),
                         size: 20,
                       ),
                     ),
                   ),
-                  Text(
+                  const Text(
                     'Now Playing',
                     style: TextStyle(fontSize: 20),
                   ),
-                  Icon(
+                  const Icon(
                     Icons.more_vert,
                     size: 28,
                   ),
@@ -104,7 +104,7 @@ class Player extends StatelessWidget {
                 ),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 20,
             ),
             Column(
@@ -126,9 +126,9 @@ class Player extends StatelessWidget {
                               maxLines: 1,
                               overflow: TextOverflow.fade,
                               playingSong.title,
-                              style: TextStyle(fontSize: 20),
+                              style: const TextStyle(fontSize: 20),
                             ),
-                            SizedBox(
+                            const SizedBox(
                               height: 6,
                             ),
                             Text(
@@ -137,16 +137,16 @@ class Player extends StatelessWidget {
                               softWrap: false,
                               overflow: TextOverflow.fade,
                               playingSong.artist!,
-                              style: TextStyle(fontSize: 20),
+                              style: const TextStyle(fontSize: 20),
                             ),
                           ],
                         ),
                       ),
-                      Icon(CupertinoIcons.heart_fill)
+                      const Icon(CupertinoIcons.heart_fill)
                     ],
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 30,
                 ),
                 Padding(
@@ -162,7 +162,7 @@ class Player extends StatelessWidget {
                     ],
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 34,
                 ),
                 SizedBox(
@@ -175,7 +175,7 @@ class Player extends StatelessWidget {
                         Container(
                           height: 40,
                           width: 40,
-                          decoration: BoxDecoration(
+                          decoration: const BoxDecoration(
                             shape: BoxShape.circle,
                             color: Colors.transparent,
                           ),
@@ -188,7 +188,7 @@ class Player extends StatelessWidget {
                             },
                             highlightColor: Colors.transparent, // رنگ Highlight
                             radius: 10,
-                            child: Icon(
+                            child: const Icon(
                               size: 30,
                               CupertinoIcons.backward_fill,
                               color: Color(0xffDDDDDD),
@@ -198,7 +198,7 @@ class Player extends StatelessWidget {
                         Container(
                           height: 80,
                           width: 80,
-                          decoration: BoxDecoration(
+                          decoration: const BoxDecoration(
                             shape: BoxShape.circle,
                             color: Colors.transparent,
                           ),
@@ -210,7 +210,7 @@ class Player extends StatelessWidget {
                         Container(
                           height: 40,
                           width: 40,
-                          decoration: BoxDecoration(
+                          decoration: const BoxDecoration(
                             shape: BoxShape.circle,
                             color: Colors.transparent,
                           ),
@@ -220,7 +220,7 @@ class Player extends StatelessWidget {
                             },
                             highlightColor: Colors.transparent, // رنگ Highlight
                             radius: 10,
-                            child: Icon(
+                            child: const Icon(
                               size: 30,
                               CupertinoIcons.forward_fill,
                               color: Color(0xffDDDDDD),
@@ -231,7 +231,7 @@ class Player extends StatelessWidget {
                     ),
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 70,
                 ),
               ],
